@@ -10,62 +10,57 @@
 <body>
     <?php
 
-    $bool = "true";
-    $int = "12";
+    $bool = true;
+    $int = 12;
     $str = "Hello Laplateforme";
-    $dec = "15,5";
-    $vide = "NULL";
-    $chose = "objet";
-    $tableau = "tableau";
+    $dec = 15.5;
 
     ?>
-    
+
     <table class="border">
         <thead>
             <tr>
                 <td class="border">Type</td>
-            <td class="border">Nom</td>
-            <td class="border">Valeur</td>
+                <td class="border">Nom</td>
+                <td class="border">Valeur</td>
             </tr>
         </thead>
         <tbody>
-        <tr>
-            <td class="border"><?php echo gettype($boolean);?></td>
-            <td class="border"><?php echo "bool";?></td>
-            <td class="border"> <?php echo $bool ?> La variable de type "boolean" ne contient que deux états possible: true ou false <td>
-        </tr>
-        <tr>
-            <td class="border"><?php echo gettype($int);?></td>
-            <td class="border"><?php echo "int";?></td>
-            <td class="border"><?php echo $int ?> La variable de type "integer" est un nombre entier qui peut etre soit positif soit négatif<td>
-        </tr>
-<tr>
-            <td class="border"><?php echo gettype($string);?></td>
-            <td class="border"><?php echo "str";?></td>
-            <td class="border"><?php echo $str ?>La variable de type "string" contient des chaines de caractère<td>
-</tr>
-<tr>
-            <td class="border"><?php echo gettype($float);?></td>
-            <td class="border"><?php echo "decimal";?></td>
-            <td class="border"><?php echo $decimal?>La variable de type "float" est un nombre décimale qui est écrit avec un point{.} et non une virgule{,}<td>
-</tr>
-<tr>
-            <td class="border"><?php echo gettype($NUL);?></td>
-            <td class="border"><?php echo "vide";?></td>
-            <td class="border"><?php echo $vide?>La variable de type "null" est une valeur spéciale qui représente une variable sans valeur<td>
-</tr>
-<tr>
-            <td class="border"><?php echo gettype($object);?></td>
-            <td class="border"><?php echo "chose";?></td>
-            <td class="border"><?php echo $chose?><td>
-</tr>
-<tr>
-            <td class="border"><?php echo gettype($array);?></td>
-            <td class="border"><?php echo "tableau";?></td>
-            <td class="border"><?php echo $tableau?>La variable de type "array" stocke plusieurs valeurs dans une seule variable<td>
-</tr>      
+            <tr>
+                <td class="border"><?php echo gettype($bool); ?></td>
+                <td class="border"><?php echo "bool"; ?></td>
+                <td class="border"> <?php echo nl2br("$bool\n"); ?> (La variable de type "boolean" ne contient que deux états possible: true ou false)</td>
+            </tr>
+            <tr>
+                <td class="border"><?php echo gettype($int); ?></td>
+                <td class="border"><?php echo "int"; ?></td>
+                <td class="border"><?php echo nl2br("$int\n"); ?> (La variable de type "integer" est un nombre entier qui peut etre soit positif soit négatif) </td>
+            </tr>
+            <tr>
+                <td class="border"><?php echo gettype($str); ?></td>
+                <td class="border"><?php echo "str"; ?></td>
+                <td class="border"><?php echo nl2br("$str\n"); ?>(La variable de type "string" contient des chaines de caractère) </td>
+            </tr>
+            <tr>
+                <td class="border"><?php echo gettype($dec); ?></td>
+                <td class="border"><?php echo "dec"; ?></td>
+                <td class="border"><?php echo nl2br("$dec\n"); ?> (La variable de type "float" est un nombre décimale qui est écrit avec un point{.} et non une virgule{,}) </td>
+            </tr>
         </tbody>
     </table>
 </body>
 
 </html>
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    thead {
+        font-size: 130%;
+        font-weight: bold;
+    }
+</style>
