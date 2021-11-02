@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title>job01</title>
 </head>
+
 <body>
     <?php
 
@@ -17,13 +19,14 @@
 
     echo "<br>";
     $val += 4;
-    echo nl2br("$val\n") ;
+    echo nl2br("$val\n");
 
     $myBool = "true";
     echo $myBool;
-    echo"<br>";
+    echo "<br>";
     $myBool = "false";
     echo $myBool;
+    
     ?>
 </body>
 
