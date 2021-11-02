@@ -16,9 +16,14 @@
     echo $val;
 
     echo "<br>";
-    $val2 = 4;
-    echo $val + $val2;
+    $val += 4;
+    echo nl2br("$val\n") ;
 
+    $myBool = "true";
+    echo $myBool;
+    echo"<br>";
+    $myBool = "false";
+    echo $myBool;
     ?>
 </body>
 
