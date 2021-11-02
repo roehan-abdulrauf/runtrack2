@@ -3,6 +3,8 @@
 
 <head>
     <title>job01</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cours.css">
 </head>
 
 <body>
@@ -26,7 +28,7 @@
     echo "<br>";
     $myBool = "false";
     echo $myBool;
-    
+
     ?>
 </body>
 

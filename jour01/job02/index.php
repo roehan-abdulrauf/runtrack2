@@ -3,11 +3,13 @@
 
 <head>
     <title>job00</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cours.css">
 </head>
 
 <body>
     <?php
-    
+
     //pour afficher hello LaPlateforme! j'ai d'abord utilisé la manière simple avec echo sans variable
     echo nl2br("Hello LaPlateforme!\n");
 
