@@ -23,12 +23,12 @@
     $val += 4;
     echo nl2br("$val\n");
 
-    $myBool = "true";
+    $myBool = true;
     echo $myBool;
     echo "<br>";
-    $myBool = "false";
+    $myBool = false;
     echo $myBool;
-
+    
     ?>
 </body>
 
