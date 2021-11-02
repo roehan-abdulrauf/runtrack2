@@ -9,9 +9,7 @@
 
 <body>
     <?php
-
     echo "Hello LaPlateforme!"
-
     ?>
 </body>
 

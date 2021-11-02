@@ -4,12 +4,14 @@
 <head>
     <title>job01</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="cours.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{font-size: 120%;}
+    </style>
 </head>
 
 <body>
     <?php
-
     $str = "LaPlateforme ";
     $str2 = "Vive ";
     $str3 = "!";
@@ -28,7 +30,6 @@
     echo "<br>";
     $myBool = false;
     echo $myBool;
-    
     ?>
 </body>
 
