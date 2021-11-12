@@ -1,6 +1,10 @@
 --//requète sql du job
 
-SELECT nom AS 'Biggest Room', MAX(capacite) FROM salles
+SELECT salles.nom AS 'Biggest Room', etage.nom,MAX(capacite) FROM salles,etage
+
+--// une autre manière de faire
+
+SELECT salles.nom AS 'Biggest Room', etage.nom, MAX(capacite) FROM salles INNER JOIN etage ON salles.id_etage = etage.id
 
 --//base de donnée du job
 

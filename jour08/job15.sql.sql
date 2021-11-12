@@ -1,6 +1,10 @@
 --//requète sql du job
 
-SELECT nom,id_etage FROM salles;
+SELECT salles.nom, etage.nom FROM salles INNER JOIN etage ON salles.id_etage = etage.id;
+
+--// une autre manière de faire
+
+SELECT salles.nom, etage.nom FROM salles,etage WHERE salles.id_etage = etage.id
 
 --//base de donnée du job
 
