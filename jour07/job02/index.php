@@ -7,7 +7,7 @@
 	<form action="index.php" method="POST">
 <?php 
         
-setcookie("nbvisites",24);
+setcookie("nbvisites");
         
 if (isset($_POST['reset'])){
     $_COOKIE['nbvisites'] = 0;
