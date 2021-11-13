@@ -1,31 +1,3 @@
-<?php
-
-  // Démarrage ou restauration de la session
-  session_start();
-
-  foreach($_POST as $key => $value)
-
-  $Refreshed = isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] === 'max-age=0';
-  
-  if ($Refreshed == true) {
-      $_SESSION['nbvisites']++;
-  } 
-  
-  if (isset($_POST['reset'])) {
-     $_SESSION['nbvisites'] ==0;
-  
-  }
-
-  /*if ($_SESSION['nbvisites'] == true) {
-    $_SESSION['nbvisites']++;
-} 
-
-elseif (isset($_POST['reset'])) {
-    $_SESSION['nbvisites'] ==0;
-
-}*/
-  echo $_SESSION['nbvisites']
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,8 +9,27 @@ elseif (isset($_POST['reset'])) {
 <body>
 
 <form action="" method="POST">
-  <input type="submit" name="reset" value="Reset"><?php ?></inupt>
-</form>
 
+<?php
+
+session_start();
+
+if (isset($_SESSION['nbvisites'])) {
+  $_SESSION["nbvisites"]++;
+}
+else {
+  $_SESSION["nbvisites"] = 0;
+}
+
+  echo $_SESSION['nbvisites']
+?>
+
+  <input type="submit" name="reset" value="Reset">
+<?php
+
+if (isset($_POST['reset'])) {
+  unset ($_SESSION['nbvisites']) ; 
+}
+?>
 </body>
 </html>
