@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<form action="index.php" method="POST">
+	<form action="" method="POST">
 <?php 
         
 setcookie("nbvisites");
