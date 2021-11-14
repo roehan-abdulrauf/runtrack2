@@ -34,5 +34,6 @@ if (isset($_POST['reset'])) {
   unset ($_SESSION['nbvisites']) ; 
 }
 ?>
+
 </body>
 </html>
